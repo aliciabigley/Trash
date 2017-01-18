@@ -28,6 +28,7 @@ namespace TrashCollector.Models
         public DbSet<PricingModel> Price { get; set; }
         public DbSet<EmployeeModel> Employee { get; set; }
         public DbSet<RouteViewModel> RouteView { get; set; }
+        public DbSet<CustomerUsernamePassword> UsernamePassword { get; set; }
 
         public ApplicationDbContext()
             : base("DefaultConnection", throwIfV1Schema: false)
