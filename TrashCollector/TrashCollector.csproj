@@ -197,6 +197,7 @@
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\CustomerFormController.cs" />
+    <Compile Include="Controllers\EmployeeFormController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Global.asax.cs">
@@ -279,6 +280,11 @@
     <Content Include="Views\CustomerForm\Details.cshtml" />
     <Content Include="Views\CustomerForm\Edit.cshtml" />
     <Content Include="Views\CustomerForm\Index.cshtml" />
+    <Content Include="Views\EmployeeForm\Create.cshtml" />
+    <Content Include="Views\EmployeeForm\Delete.cshtml" />
+    <Content Include="Views\EmployeeForm\Details.cshtml" />
+    <Content Include="Views\EmployeeForm\Edit.cshtml" />
+    <Content Include="Views\EmployeeForm\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
