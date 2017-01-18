@@ -16,6 +16,7 @@ namespace TrashCollector.Controllers
     [System.Runtime.InteropServices.Guid("B2959578-9376-4C84-BEB3-70E3B5AFF4F1")]
     public class AccountController : Controller
     {
+        CustomerFormController customerForm = new CustomerFormController();
         private ApplicationSignInManager _signInManager;
         private ApplicationUserManager _userManager;
 
@@ -148,7 +149,7 @@ namespace TrashCollector.Controllers
         [HttpPost]
         [AllowAnonymous]
         [ValidateAntiForgeryToken]
-        public async Task<ActionResult> Register(RegisterViewModel model)
+        public async Task<ActionResult> Register(RegisterViewModel model, CustomerFormController customer)
         {
             if (ModelState.IsValid)
             {
@@ -164,7 +165,7 @@ namespace TrashCollector.Controllers
                     // var callbackUrl = Url.Action("ConfirmEmail", "Account", new { userId = user.Id, code = code }, protocol: Request.Url.Scheme);
                     // await UserManager.SendEmailAsync(user.Id, "Confirm your account", "Please confirm your account by clicking <a href=\"" + callbackUrl + "\">here</a>");
 
-                    return RedirectToAction("Index", "Home");
+                    return RedirectToAction("Create", "CustomerForm");
                 }
                 AddErrors(result);
             }
