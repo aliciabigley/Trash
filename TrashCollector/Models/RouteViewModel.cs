@@ -15,6 +15,9 @@ namespace TrashCollector.Models
         [Required]
         public int Customerid { get; set; }
         public virtual CustomerModel Customer { get; set; }
+        [Required]
+        public int Employeeid { get; set; }
+        public virtual EmployeeModel Employee { get; set; }
        
     }
 }
