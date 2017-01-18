@@ -27,6 +27,7 @@ namespace TrashCollector.Models
         public DbSet<CustomerModel> Customer { get; set; }
         public DbSet<PricingModel> Price { get; set; }
         public DbSet<EmployeeModel> Employee { get; set; }
+        public DbSet<RouteViewModel> RouteView { get; set; }
 
         public ApplicationDbContext()
             : base("DefaultConnection", throwIfV1Schema: false)
