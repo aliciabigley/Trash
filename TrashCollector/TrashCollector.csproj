@@ -223,6 +223,10 @@
     <Compile Include="Migrations\201701181738099_AddUsernamePassToIdentityModels.Designer.cs">
       <DependentUpon>201701181738099_AddUsernamePassToIdentityModels.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201701181747187_employeeforeignkeyadded.cs" />
+    <Compile Include="Migrations\201701181747187_employeeforeignkeyadded.Designer.cs">
+      <DependentUpon>201701181747187_employeeforeignkeyadded.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\CustomerModel.cs" />
@@ -330,6 +334,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201701181738099_AddUsernamePassToIdentityModels.resx">
       <DependentUpon>201701181738099_AddUsernamePassToIdentityModels.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201701181747187_employeeforeignkeyadded.resx">
+      <DependentUpon>201701181747187_employeeforeignkeyadded.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
