@@ -13,9 +13,11 @@ using TrashCollector.Models;
 namespace TrashCollector.Controllers
 {
     [Authorize]
+    [System.Runtime.InteropServices.Guid("B2959578-9376-4C84-BEB3-70E3B5AFF4F1")]
     public class AccountController : Controller
     {
         private ApplicationDbContext db = new ApplicationDbContext();
+        CustomerModel customer = new CustomerModel();
         private ApplicationSignInManager _signInManager;
         private ApplicationUserManager _userManager;
 
@@ -152,7 +154,7 @@ namespace TrashCollector.Controllers
         {
             if (ModelState.IsValid)
             {
-                var user = new ApplicationUser { UserName = model.Email, Email = model.Email };
+                var user = new ApplicationUser { UserName = customer.Email,};
                 var result = await UserManager.CreateAsync(user, model.Password);
                 if (result.Succeeded)
                 {
