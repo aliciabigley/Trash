@@ -16,6 +16,7 @@ namespace TrashCollector.Controllers
     [System.Runtime.InteropServices.Guid("B2959578-9376-4C84-BEB3-70E3B5AFF4F1")]
     public class AccountController : Controller
     {
+        private ApplicationDbContext db = new ApplicationDbContext();
         CustomerFormController customerForm = new CustomerFormController();
         private ApplicationSignInManager _signInManager;
         private ApplicationUserManager _userManager;
