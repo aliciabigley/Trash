@@ -3,6 +3,10 @@ using System.Security.Claims;
 using System.Threading.Tasks;
 using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.EntityFramework;
+using static TrashCollector.Models.CustomerModel;
+using static TrashCollector.Models.PricingModel;
+using static TrashCollector.Models.EmployeeModel;
+
 
 namespace TrashCollector.Models
 {
@@ -20,9 +24,9 @@ namespace TrashCollector.Models
 
     public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
     {
-        DbSet<CustomerModel> Customer { get; set; }
-        DbSet<PricingModel> Price { get; set; }
-        DbSet<EmployeeModel> Employee { get; set; }
+        public DbSet<CustomerModel> Customer { get; set; }
+        public DbSet<PricingModel> Price { get; set; }
+        public DbSet<EmployeeModel> Employee { get; set; }
 
         public ApplicationDbContext()
             : base("DefaultConnection", throwIfV1Schema: false)
@@ -33,5 +37,7 @@ namespace TrashCollector.Models
         {
             return new ApplicationDbContext();
         }
+
+        //public System.Data.Entity.DbSet<TrashCollector.Models.CustomerModel> CustomerModels { get; set; }
     }
 }
