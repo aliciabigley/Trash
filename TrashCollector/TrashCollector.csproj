@@ -215,6 +215,10 @@
     <Compile Include="Migrations\201701181704178_customerid.Designer.cs">
       <DependentUpon>201701181704178_customerid.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201701181720038_AddingCustomerUsernamePasswordModel.cs" />
+    <Compile Include="Migrations\201701181720038_AddingCustomerUsernamePasswordModel.Designer.cs">
+      <DependentUpon>201701181720038_AddingCustomerUsernamePasswordModel.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\CustomerModel.cs" />
@@ -316,6 +320,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201701181704178_customerid.resx">
       <DependentUpon>201701181704178_customerid.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201701181720038_AddingCustomerUsernamePasswordModel.resx">
+      <DependentUpon>201701181720038_AddingCustomerUsernamePasswordModel.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
