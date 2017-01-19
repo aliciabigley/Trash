@@ -318,6 +318,7 @@
     <Content Include="Views\RouteViewForm\Edit.cshtml" />
     <Content Include="Views\RouteViewForm\Index.cshtml" />
     <Content Include="Views\Home\ServiceAndPricing.cshtml" />
+    <Content Include="Views\Shared\_loginCustomerPartial.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
