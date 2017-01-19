@@ -33,5 +33,17 @@ namespace TrashCollector.Controllers
 
             return View();
         }
+        public ActionResult Customer()
+        {
+            ViewBag.Message = "Access your customer information here.";
+
+            return View();
+        }
+        public ActionResult Employee()
+        {
+            ViewBag.Message = "Access your employee information here.";
+
+            return View();
+        }
     }
 }

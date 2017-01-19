@@ -17,6 +17,7 @@ namespace TrashCollector.Controllers
     public class AccountController : Controller
     {
         private ApplicationDbContext db = new ApplicationDbContext();
+       
         CustomerFormController customerForm = new CustomerFormController();
         private ApplicationSignInManager _signInManager;
         private ApplicationUserManager _userManager;
@@ -73,8 +74,15 @@ namespace TrashCollector.Controllers
         {
             if (!ModelState.IsValid)
             {
+
                 return View(model);
             }
+            //if (!ModelState.IsValid &&  User.Identity.Name == "Admin")
+            //{
+
+            //    return View("employee");
+            //}
+
 
             // This doesn't count login failures towards account lockout
             // To enable password failures to trigger account lockout, change to shouldLockout: true
@@ -83,6 +91,10 @@ namespace TrashCollector.Controllers
             {
                 case SignInStatus.Success:
                     return RedirectToLocal(returnUrl);
+                //if (User.Identity.Name == "Admin")
+                //return RedirectToLocal("employee");
+                //else if (User.Identity.Name == "Cusomter")
+                //    return RedirectToLocal("customer");
                 case SignInStatus.LockedOut:
                     return View("Lockout");
                 case SignInStatus.RequiresVerification:

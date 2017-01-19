@@ -196,6 +196,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\CustomerEmployeeController.cs" />
     <Compile Include="Controllers\CustomerFormController.cs" />
     <Compile Include="Controllers\EmployeeFormController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
@@ -250,6 +251,7 @@
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\bootstrap-flatly.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="favicon.ico" />
@@ -332,9 +334,14 @@
     <Content Include="Views\PricingForm\Edit.cshtml" />
     <Content Include="Views\PricingForm\Index.cshtml" />
     <Content Include="Views\EmployeeForm\EmployeeLogin.cshtml" />
+    <Content Include="Views\Shared\_loginEmployeePartial.cshtml" />
+    <Content Include="Views\Home\Customer.cshtml" />
+    <Content Include="Views\Home\Employee.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="ViewModel\" />
+    <Folder Include="Views\CustomerEmployee\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
