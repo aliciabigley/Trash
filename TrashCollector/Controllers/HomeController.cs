@@ -12,6 +12,13 @@ namespace TrashCollector.Controllers
         {
             return View();
         }
+        public ActionResult ServiceAndPricing()
+        {
+            ViewBag.Message = "Service and pricing goes here.";
+
+            return View();
+        }
+
 
         public ActionResult About()
         {
