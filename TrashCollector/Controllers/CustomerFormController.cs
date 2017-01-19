@@ -19,6 +19,11 @@ namespace TrashCollector.Controllers
         {
             return View(db.Customer.ToList());
         }
+        public ActionResult Bill()
+        {
+            return View();
+        }
+
 
         // GET: CustomerForm/Details/5
         public ActionResult Details(int? id)
@@ -123,5 +128,6 @@ namespace TrashCollector.Controllers
             }
             base.Dispose(disposing);
         }
+        
     }
 }
