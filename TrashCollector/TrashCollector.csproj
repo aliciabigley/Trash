@@ -232,6 +232,10 @@
     <Compile Include="Migrations\201701182105398_UsernameEntry.Designer.cs">
       <DependentUpon>201701182105398_UsernameEntry.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201701190144226_routeview.cs" />
+    <Compile Include="Migrations\201701190144226_routeview.Designer.cs">
+      <DependentUpon>201701190144226_routeview.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\CustomerModel.cs" />
@@ -319,6 +323,8 @@
     <Content Include="Views\RouteViewForm\Index.cshtml" />
     <Content Include="Views\Home\ServiceAndPricing.cshtml" />
     <Content Include="Views\Shared\_loginCustomerPartial.cshtml" />
+    <Content Include="Views\RouteViewForm\RouteView.cshtml" />
+    <Content Include="Views\View.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -352,6 +358,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201701182105398_UsernameEntry.resx">
       <DependentUpon>201701182105398_UsernameEntry.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201701190144226_routeview.resx">
+      <DependentUpon>201701190144226_routeview.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

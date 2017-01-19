@@ -20,6 +20,10 @@ namespace TrashCollector.Controllers
             var routeView = db.RouteView.Include(r => r.Customer).Include(r => r.Employee);
             return View(routeView.ToList());
         }
+        public ActionResult RouteView()
+        {
+            return View();
+        }
 
         // GET: RouteViewForm/Details/5
         public ActionResult Details(int? id)
