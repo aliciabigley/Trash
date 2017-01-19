@@ -14,7 +14,9 @@
     <div class="col-md-4">
         <h2>Edit Account</h2>
         <p>Blurb about customer accuont</p>
-        <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301865">Update Account &raquo;</a></p>
+        @*<li>@Html.ActionLink("Employee Section", "RouteView", "RouteViewForm")</li>*@
+
+        <p><a class="btn btn-default" @Html.ActionLink("Update Account", "RouteView", "RouteViewForm") @*href="CustomerFormView, Edit">Update Account &raquo;*@</a></p>
     </div>
     <div class="col-md-4">
         <h2>Pay Bill</h2>
