@@ -40,7 +40,7 @@ namespace TrashCollector
                 var user = new ApplicationUser();
                 user.UserName = "admin";
                 user.Email = "admin@email.com";
-                string userPWD = "password";
+                string userPWD = "Password1!";
                 var chkUser = userManager.Create(user, userPWD);
 
                 if (chkUser.Succeeded)

@@ -200,6 +200,7 @@
     <Compile Include="Controllers\EmployeeFormController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Controllers\PricingFormController.cs" />
     <Compile Include="Controllers\RouteViewFormController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -325,6 +326,12 @@
     <Content Include="Views\Shared\_loginCustomerPartial.cshtml" />
     <Content Include="Views\RouteViewForm\RouteView.cshtml" />
     <Content Include="Views\View.cshtml" />
+    <Content Include="Views\PricingForm\Create.cshtml" />
+    <Content Include="Views\PricingForm\Delete.cshtml" />
+    <Content Include="Views\PricingForm\Details.cshtml" />
+    <Content Include="Views\PricingForm\Edit.cshtml" />
+    <Content Include="Views\PricingForm\Index.cshtml" />
+    <Content Include="Views\EmployeeForm\EmployeeLogin.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
