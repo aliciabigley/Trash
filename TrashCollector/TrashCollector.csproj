@@ -325,6 +325,7 @@
     <Content Include="Views\Shared\_loginCustomerPartial.cshtml" />
     <Content Include="Views\RouteViewForm\RouteView.cshtml" />
     <Content Include="Views\View.cshtml" />
+    <Content Include="Views\Shared\_loginEmployeePartial.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
