@@ -1,61 +1,70 @@
-﻿<!DOCTYPE html>
+﻿@model TrashCollector.Models.RouteViewModel
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
 <html>
 <head>
-        <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
-        <meta charset="utf-8">
-        <title>Directions service (complex)</title>
-        <style>
-                /* Always set the map height explicitly to define the size of the div
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <title>Directions service (complex)</title>
+    <style>
+        /* Always set the map height explicitly to define the size of the div
             * element that contains the map. */
-                #map {
-                    height: -50%;
-                }
-                /* Optional: Makes the sample page fill the window. */
-                html, body {
-                    height: 100%;
-                    margin: 0;
-                    padding: 0;
-                }
+        #map {
+            height: 100%;
+        }
+        /* Optional: Makes the sample page fill the window. */
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
 
-                #floating-panel {
-                    position: absolute;
-                    top: 10px;
-                    left: 25%;
-                    z-index: 5;
-                    background-color: #fff;
-                    padding: 5px;
-                    border: 1px solid #999;
-                    text-align: center;
-                    font-family: 'Roboto','sans-serif';
-                    line-height: 30px;
-                    padding-left: 10px;
-                }
+        #floating-panel {
+            position: absolute;
+            top: 10px;
+            left: 25%;
+            z-index: 5;
+            background-color: #fff;
+            padding: 5px;
+            border: 1px solid #999;
+            text-align: center;
+            font-family: 'Roboto','sans-serif';
+            line-height: 30px;
+            padding-left: 10px;
+        }
 
-                #warnings-panel {
-                    width: 100%;
-                    height: 10%;
-                    text-align: center;
-                }
-        </style>
+        #warnings-panel {
+            width: 100%;
+            height: 10%;
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
     <div id="floating-panel">
-        <b>Start: </b>
+        <b>Week Day: </b>
         <select id="start">
-            <option value="penn station, new york, ny">Penn Station</option>
-            <option value="grand central station, new york, ny">Grand Central Station</option>
-            <option value="625 8th Avenue, New York, NY, 10018">Port Authority Bus Terminal</option>
-            <option value="staten island ferry terminal, new york, ny">Staten Island Ferry Terminal</option>
-            <option value="101 E 125th Street, New York, NY">Harlem - 125th St Station</option>
+            <option value="5175 S 27th S, Milwaukee, WI, 53221">The Edge Sports Bar(Sunday-53221)</option>
+            <option value="N88 W16495 Main St, Menomonee Fall, WI, 53051">AJ O'Brady (Monday-53051)</option>
+            <option value="1230 North 10th Street, Milwaukee, WI, 53205">Jackson Blue Ribbon (Tuesday-53205)</option>
+            <option value="4928 West Vilet Street, Milwaukee, WI, 53208'">O'Briens (Wednesday-53208)</option>
+            <option value="2578 North Dousman Street, Milwaukee, WI, 53212">Gee Willickers (Thursday-53212)</option>
+            <option value="2378 North 12th Street, Milwaukee, WI, 53206">Big Larrys (Friday-53206)</option>
+            <option value="7964 West Appleton Ave, Milwaukee, WI, 53218">Rhino Bar Saturday-53218</option>
         </select>
-        <b>End: </b>
+        <b>Routes: </b>
         <select id="end">
-            <option value="260 Broadway New York NY 10007">City Hall</option>
-            <option value="W 49th St & 5th Ave, New York, NY 10020">Rockefeller Center</option>
-            <option value="moma, New York, NY">MOMA</option>
-            <option value="350 5th Ave, New York, NY, 10118">Empire State Building</option>
-            <option value="253 West 125th Street, New York, NY">Apollo Theater</option>
-            <option value="1 Wall St, New York, NY">Wall St</option>
+            <option value="3400 W Loomis Road, Milwaukee, WI">Graingers Pub N Grill</option>
+            <option value="N71W12980 Appleton Ave #1, Menomonee Fall, WI, 53051">Trysting Place</option>
+            <option value="1218 West Cherry Street, Milwaukee, WI, 53205">Road Runner</option>
+            <option value="4919 West North Ave, Milwaukee, WI, 53208">McBobs</option>
+            <option value="901 East Clarke Stree, Milwaukee, WI, 53212">Bremen Cafe</option>
+            <option value="3646 North Teutonia Ave, Milwaukee, WI, 53206< 53206">Catfish Bar</option>
+            <option value="7420 West Villard Ave, Milwaukee, WI, 53218< 53218">Dee Elegace</option>
         </select>
     </div>
     <div id="map"></div>
@@ -71,7 +80,7 @@
         // Create a map and center it on Manhattan.
         var map = new google.maps.Map(document.getElementById('map'), {
           zoom: 13,
-          center: {lat: 40.771, lng: -73.974}
+          center: {lat: 43.0389, lng: 87.9065}
         });
 
         // Create a renderer for directions and bind it to the map.
@@ -143,7 +152,9 @@
       }
     </script>
     <script async defer
-            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDLXaFa5Ur82yQVJaHeoz84IA8XyY_paFM=initMap">
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBv1R1UJZIPVsVp5GioBCm1vJvoF4qMZEY&callback=initMap">
     </script>
 </body>
 </html>
+
+
