@@ -25,6 +25,8 @@
                     <li>@Html.ActionLink("Services and Pricing", "ServiceAndPricing", "Home")</li>
                     <li>@Html.ActionLink("About", "About", "Home")</li>
                     <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
+                    <li>@Html.ActionLink("Customer", "Customer", "Home")</li>
+                    @*<li>@Html.ActionLink("Employee", "Employee", "Home")</li>*@
                 </ul>
                 @Html.Partial("_LoginPartial")
             </div>
@@ -34,6 +36,8 @@
         @RenderBody()
         <hr />
         <footer>
+            <li>@Html.ActionLink("Employee Section", "RouteView", "RouteViewForm")</li>
+           @* <p><a href="">Employee Section</a></p>*@
             <p>&copy; @DateTime.Now.Year - Waste Not Want Not</p>
         </footer>
     </div>
