@@ -40,6 +40,10 @@ namespace TrashCollector.Controllers
         {
             return View();
         }
+        public ActionResult Services()
+        {
+            return View();
+        }
 
         // POST: CustomerForm/Create
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for  
